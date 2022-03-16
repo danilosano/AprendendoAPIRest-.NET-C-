@@ -34,6 +34,20 @@ public class JobVacanciesController : ControllerBase
         return Ok(jobVacancy);
     }
 
+    /// <summary>
+    /// Cadastrar uma vaga de emprego.
+    /// </summary>
+    /// 
+    ///  {
+    ///  "title": "API Rest utilizando Entity Framework",
+    ///  "description": "API criada para o estudo e melhor entendimento das funções dentro das APIs",
+    ///  "company": "Empresa de tecnologia que me quiser em sua equipe! Haha",
+    ///  "isRemote": true,
+    ///  "salaryRange": "1000-3000"
+    ///  }
+    /// <param name="model">Dados da vaga</param>
+    /// <returns>Retorna o objeto que acaba de ser criado</returns>
+    /// <response code="201">Sucesso!</response>
     [HttpPost]
     public IActionResult Post(AddJobVacancyInputModel model){
         var jobVacancy = new JobVacancy(model.Title, model.Description, model.Company, model.IsRemote, model.SalaryRange);
@@ -41,6 +55,14 @@ public class JobVacanciesController : ControllerBase
         return CreatedAtAction("GetById", new{id = jobVacancy.Id}, jobVacancy);
     }
 
+
+    /// <summary>
+    /// Atualizar uma vaga de emprego.
+    /// </summary>
+    /// <param name="id">Identificador do registro a ser alterado</param>
+    /// <param name="model">Dados da vaga</param>
+    /// <returns>Apenas um código de sucesso</returns>
+    /// <response code="204">Sucesso!</response>
     [HttpPut("{id}")]
     public IActionResult Put(int id,UpdateJobVacancyInputModel model){
         var jobVacancy = _repository.GetById(id);
