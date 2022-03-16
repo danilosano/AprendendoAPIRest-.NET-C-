@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "71CVoDQoExm4pTwpN8S1nyI32cU5irJHwb0kmL6k2EDmFM4M/7NZg4z+wRjcENv36oD46dkq+xx/txBgZfzytA==",
+  "dgSpecHash": "65h2YO86gYQFYn81ThFYbPSCXF5JeJ4tulwtZT1MtkLEKQOL652fXyZ8+tXk8vOYjfHdmR5GPMmL3KgjM8hZXQ==",
   "success": true,
   "projectFilePath": "C:\\GIT\\AprendendoAPI.API\\AprendendoAPI.API.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,8 @@
     "C:\\Users\\Danilo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Danilo\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Danilo\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Danilo\\.nuget\\packages\\npgsql\\6.0.3\\npgsql.6.0.3.nupkg.sha512",
+    "C:\\Users\\Danilo\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.3\\npgsql.entityframeworkcore.postgresql.6.0.3.nupkg.sha512",
     "C:\\Users\\Danilo\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\Danilo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\Danilo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

@@ -9,8 +9,9 @@ namespace AprendendoAPI.Entities;
         Company = company;
         IsRemote = isRemote;
         SalaryRange = salaryRange;
-        CreatedAt = DateTime.Now;
+        CreatedAt = DateTime.UtcNow;
         Applications = new List<JobApplication>();
+        
     }
 
     public int Id { get; private set; }

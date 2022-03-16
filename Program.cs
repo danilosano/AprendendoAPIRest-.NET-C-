@@ -5,7 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 var connectionString = builder.Configuration.GetConnectionString("AprendendoAPICs");
-builder.Services.AddDbContext<AprendendoAPIContext>(options => options.UseInMemoryDatabase("AprendendoAPI"));
+builder.Services.AddDbContext<AprendendoAPIContext>(options => options.UseNpgsql("Host=localhost;Database=TesteAPI;Username=postgres;"+
+                                                                                 "Password=123"));
 
 // Add services to the container.
 builder.Services.AddControllers();
